@@ -1,68 +1,97 @@
-# 🏫 Análisis y Modelado de Sistemas — Instituto de Inglés "Oxford"
+<h1 align="center">🏫 Análisis y Modelado de Sistemas</h1>
+<h3 align="center">Instituto de Inglés «Oxford»</h3>
 
-Proyecto Integrador de Análisis Funcional e Ingeniería de Requisitos desarrollado para la cátedra de **Análisis de Sistemas** (3.° año de Ingeniería en Informática, UGD).
+<p align="center">
+  <img src="https://img.shields.io/badge/Disciplina-Análisis%20de%20Sistemas-6C5CE7?style=for-the-badge" alt="Análisis de Sistemas">
+  <img src="https://img.shields.io/badge/Metodología-PIECES-0A7EA4?style=for-the-badge" alt="PIECES">
+  <img src="https://img.shields.io/badge/Modelado-DFD%20%7C%20DER-00897B?style=for-the-badge" alt="DFD y DER">
+  <img src="https://img.shields.io/badge/Documentación-PDF-B31B1B?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="PDF">
+</p>
 
-Este repositorio aloja el estudio integral del sistema de información de la Secretaría Administrativa de un instituto educativo. Aplicando la metodología de **Whitten, Bentley & Barlow**, el trabajo recorre las fases de Inspección, Estudio y Definición para relevar la situación actual, diagnosticar problemas organizacionales y modelar rigurosamente los requerimientos lógicos y funcionales de un nuevo sistema.
+Proyecto Integrador de **Análisis Funcional e Ingeniería de Requisitos** desarrollado para la cátedra de **Análisis de Sistemas** (3.° año de Ingeniería en Informática, UGD).
 
----
-
-## 👥 Contexto del Proyecto y Créditos
-
-Este trabajo refleja el **esfuerzo colaborativo de 11 estudiantes** agrupados bajo el equipo "Herederos de Schuster" durante el ciclo lectivo 2026. La versión aquí publicada es una copia parcial y "sanitizada" (datos reales modificados por confidencialidad empresarial) que captura el estado del proyecto **hasta la Fase de Definición (Especificaciones y Modelos Esenciales)**, reflejando el punto exacto hasta donde colaboré de forma directa en el equipo antes de finalizar mi participación en esta instancia.
-
-**Equipo de Analistas (Autores originales):**
-* M. Alvez
-* E. Cardozo
-* S. Halberstadt
-* M. Kalesplaner
-* A. Mango
-* **Tomás Moroz** *(Curador de este repositorio)*
-* A. Nielsen
-* L. Ojeda
-* B. Roza
-* R. Ruiz
-* D. Zanek
-
-> **Nota:** Mis ex compañeros de equipo continuaron posteriormente con la cursada correlativa de *Diseño de Sistemas*, donde esta base analítica se expandió hacia la arquitectura de implementación. El mérito del modelado aquí expuesto es un logro conjunto del equipo original.
+Este repositorio reúne el estudio del sistema de información de la Secretaría Administrativa de un instituto educativo. Aplicando la metodología de **Whitten, Bentley y Barlow**, el trabajo recorre las fases de Inspección, Estudio y Definición para relevar la situación actual, diagnosticar problemas organizacionales y modelar los requerimientos lógicos y funcionales de un nuevo sistema.
 
 ---
 
-## 🛠️ Metodología y Frameworks Aplicados
+## 📑 Índice
 
-* **Marco Analítico PIECES:** Clasificación exhaustiva de problemas, oportunidades y normas en categorías de *Prestaciones, Información, Economía, Control, Eficiencia y Servicios*.
-* **Técnicas de Relevamiento:** Diseño, ejecución y transcripción de entrevistas directas, cuestionarios estructurados y análisis documental (*Investigación de Hechos*).
-* **Modelado de Procesos (Análisis Estructurado):** Construcción de Diagramas de Flujo de Datos (DFD) utilizando partición de eventos (Diagrama de Contexto, DFD por Eventos, DFD Preliminar, Figura 0 y Explosiones Atómicas) siguiendo estrictamente las convenciones de balanceo y nivelación de Edward Yourdon.
-* **Modelado de Datos:** Diseño del modelo conceptual de la nueva solución mediante un Diagrama de Entidad-Relación (DER) extendido.
-* **Especificación Lógica de Procesos (ELP):** Documentación formal, rigurosa y sin ambigüedades de los procesos atómicos utilizando Lenguaje Estructurado (Pseudocódigo), Pre/Post Condiciones y Árboles de Decisión.
-* **Trazabilidad:** Matrices de ponderación matemática de urgencia/visibilidad y Matriz de Trazabilidad bidireccional entre las necesidades del nuevo sistema y los problemas de negocio originales.
+- [Contexto y créditos](#-contexto-del-proyecto-y-créditos)
+- [Metodología y herramientas](#-metodología-y-frameworks-aplicados)
+- [Fases documentadas](#-fases-documentadas-del-proyecto)
+- [Contenido del repositorio](#-estructura-del-repositorio)
 
 ---
 
-## ⚙️ Fases Documentadas del Proyecto
+## 👥 Contexto del proyecto y créditos
 
-### 1️⃣ Fase de Inspección y Viabilidad
-* Relevamiento inicial del organigrama mediante entrevistas.
-* Identificación del mapa de procesos organizacionales y delimitación de la frontera del sistema.
-* Matriz preliminar PIECES y evaluación de viabilidad (operativa, técnica, económica y de calendario) para determinar la continuidad del proyecto.
+Este trabajo refleja el **esfuerzo colaborativo de 11 estudiantes**, agrupados bajo el equipo **«Herederos de Schuster»** durante el ciclo lectivo 2026.
 
-### 2️⃣ Fase de Estudio del Sistema Actual ("As-Is")
-* Documentación detallada del funcionamiento actual estructurada en bloques elementales: *Personas, Actividades, Datos y Tecnología*.
-* Modelado esencial del sistema actual mediante DFDs para detectar empíricamente redundancias, cuellos de botella y controles deficientes (por ejemplo, duplicación de inscripciones de alumnos en múltiples horarios, ocupación de cupos ficticios y demoras de 4 horas en rastrear el historial de docentes).
-* Análisis de causas y efectos, y formulación de una función de priorización.
+La versión publicada es una copia parcial y **sanitizada** —se modificaron datos reales por confidencialidad empresarial— que captura el estado del proyecto hasta la **Fase de Definición (especificaciones y modelos esenciales)**. Representa el punto hasta el cual participé directamente en el equipo antes de finalizar mi participación en esta instancia.
 
-### 3️⃣ Fase de Definición del Nuevo Sistema ("To-Be")
-* Establecimiento de los objetivos mensurables del nuevo sistema y priorización de requerimientos (obligatorios, deseables, opcionales).
-* Construcción del modelo esencial del sistema propuesto, completamente agnóstico de la tecnología de implementación.
-* Construcción del **Diccionario de Datos** del nuevo sistema (almacenes, flujos de datos estructurados y elementos de datos atómicos).
-* Especificación de la Lógica de Procesos (ELP) para guiar al futuro equipo de desarrollo de software y arquitectos de bases de datos.
+**Equipo de analistas — autores originales:**
+
+- M. Alvez
+- E. Cardozo
+- S. Halberstadt
+- M. Kalesplaner
+- A. Mango
+- **Tomás Moroz** — curador de este repositorio
+- A. Nielsen
+- L. Ojeda
+- B. Roza
+- R. Ruiz
+- D. Zanek
+
+> **Nota de autoría:** mis excompañeros continuaron posteriormente con la cursada correlativa de Diseño de Sistemas, donde esta base analítica se expandió hacia la arquitectura de implementación. El modelado aquí expuesto es un logro conjunto del equipo original.
 
 ---
 
-## 📂 Estructura del Repositorio
+## 🛠️ Metodología y frameworks aplicados
 
-* `Documento_TPI_Analisis_Funcional.pdf` — El informe "sanitizado" completo con las Fases de Inspección, Estudio y Definición, matrices de análisis, diccionarios de datos y especificaciones.
-* `/diagramas` — Carpeta con las exportaciones en alta calidad de los principales modelos gráficos desarrollados en Lucidchart:
-  * Diagramas de Contexto (Sistema Actual y Nuevo Sistema).
-  * DFD de Figura 0 (Balanceado y nivelado).
-  * Diagrama de Entidad-Relación (DER).
-  * Diagrama de Conexión de Puestos (Modelo de Redes).
+- **Marco analítico PIECES:** clasificación de problemas, oportunidades y normas en las categorías de Prestaciones, Información, Economía, Control, Eficiencia y Servicios.
+- **Técnicas de relevamiento:** diseño, ejecución y transcripción de entrevistas directas, cuestionarios estructurados y análisis documental mediante investigación de hechos.
+- **Modelado de procesos:** construcción de Diagramas de Flujo de Datos (DFD) mediante partición de eventos: Diagrama de Contexto, DFD por Eventos, DFD Preliminar, Figura 0 y explosiones atómicas. Se siguen las convenciones de balanceo y nivelación de Edward Yourdon.
+- **Modelado de datos:** diseño conceptual de la solución mediante un Diagrama de Entidad-Relación (DER) extendido.
+- **Especificación Lógica de Procesos (ELP):** documentación formal de procesos atómicos mediante lenguaje estructurado (pseudocódigo), precondiciones, poscondiciones y árboles de decisión.
+- **Trazabilidad:** matrices de ponderación de urgencia y visibilidad, y matriz de trazabilidad bidireccional entre las necesidades del sistema propuesto y los problemas originales del negocio.
+
+---
+
+## ⚙️ Fases documentadas del proyecto
+
+### 1️⃣ Fase de inspección y viabilidad
+
+- Relevamiento inicial del organigrama mediante entrevistas.
+- Identificación del mapa de procesos organizacionales y delimitación de la frontera del sistema.
+- Elaboración de la matriz preliminar PIECES y evaluación de viabilidad operativa, técnica, económica y de calendario.
+
+### 2️⃣ Fase de estudio del sistema actual (*As-Is*)
+
+- Documentación del funcionamiento actual a partir de cuatro bloques: **Personas, Actividades, Datos y Tecnología**.
+- Modelado esencial mediante DFD para detectar redundancias, cuellos de botella y controles deficientes.
+- Análisis de causas y efectos y formulación de una función de priorización.
+
+Entre los ejemplos analizados se encuentran la duplicación de inscripciones de alumnos en varios horarios, la ocupación ficticia de cupos y las demoras en rastrear el historial de docentes.
+
+### 3️⃣ Fase de definición del nuevo sistema (*To-Be*)
+
+- Definición de objetivos mensurables y priorización de requerimientos obligatorios, deseables y opcionales.
+- Construcción del modelo esencial de la solución, independiente de la tecnología de implementación.
+- Elaboración del **Diccionario de Datos**: almacenes, flujos estructurados y elementos atómicos.
+- Especificación de la lógica de procesos para orientar al futuro equipo de desarrollo y a los responsables del diseño de la base de datos.
+
+---
+
+## 📂 Estructura del repositorio
+
+- **`Documento_TPI_Analisis_Funcional.pdf`** — informe sanitizado con las fases de Inspección, Estudio y Definición, matrices de análisis, diccionarios de datos y especificaciones.
+- **`/diagramas`** — carpeta con exportaciones en alta calidad de los principales modelos gráficos realizados en Luciddchart, incluidos:
+  - Diagramas de Contexto del sistema actual y del nuevo sistema.
+  - DFB de Figura 0, balanceado y nivelado.
+  - Diagrama de Entidad-Relación (DER).
+  - Diagrama de Conexión de Puestos (modelo de redes).
+
+---
+
+<p align="center"><b>Análisis de Sistemas ² Ingeniería de Requisitos ² Modelado funcional</b></p>
